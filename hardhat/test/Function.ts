@@ -17,4 +17,10 @@ describe("Variable test", function () {
     await function1.stateValue();
     await function1.function1();
   });
+
+  it("return", async function () {
+    await function1.getDouble(3, 4);
+    await function1.getRef(12);
+    await function1.getRefExternal("Hello");
+  });
 });
